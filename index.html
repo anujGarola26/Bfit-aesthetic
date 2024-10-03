@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bfit aesthetic</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="bfit.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+      <nav >
+        <div class="logo">
+          <h1>Bfit<span>aesthetic</span></h1>
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </div>
+        <ul id="navbar">
+          <li>
+            <a href="#home" id="homes" onclick="home()">HOME</a>
+            <a href="#program" id="programs" onclick="program()">PROGRAM</a>
+            <a href="#calculator1" id="calculators" onclick="calculator()">BMR-CALCULATOR</a>
+            <a href="#about" id="abouts" onclick="about()">BLOG</a>
+            <a href="#contact" id="contacts" onclick="contact()">ABOUT</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- HOME PAGE DESIGN -->
+
+      <div class="home-section" id="home">
+        <div class="home-text">
+          <h2>Bfit<span id="as">aesthetic</span></h2>
+          <h3>Star your Fitness Journey with us..</h3>
+          <p>
+            Together, we can transform your fitness journey. Start today and unlock your potential!
+          </p>
+        </div>
+
+        <img src="men.webp" alt="" />
+      </div>
+
+      <!-- PROGRAM PAGE DESIGN -->
+
+      <div class="program-section" id="program">
+        <div class="head">
+          <h2>OUR <span>PROGRAM'S</span></h2>
+        </div>
+
+        <div class="our-program">
+          <div class="home-workout">
+            <a href="home-workout.mp4" ><img src="home-workout.webp" alt="" /></a>
+            <h3>Home workout</h3>
+            <a href="home-workout.pdf"><button>DOWNLOAD <i class="fa-solid fa-circle-down"></i></button></a>
+          </div>
+
+          <div class="yoga">
+            <a href="yoga.mp4"><img src="yoga.webp" alt="" /></a>
+            <h3>Yoga</h3>
+            <a href="yoga.pdf"><button>DOWNLOAD <i class="fa-solid fa-circle-down"></i></button></a>
+
+          </div>
+
+          <div class="gym-workout">
+            <a href="gym-workout.mp4"><img src="gym-workout.webp" alt="" /></a>
+            <h3>GYM workout</h3>
+            <a href="gym-workout.pdf" download="gym-workout.pdf"><button>DOWNLOAD<i class="fa-solid fa-circle-down"></i></button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CALORIE CALCULATOR DESIGN -->
+
+      <div class="calculator-cal" >
+        <h2 id="calculator1">CALORIE <span>CALCULATOR</span></h2>
+        <div class="bmr-calculator">
+         <h3>CALORIE <span>CALCULATOR..</span></h3>
+         <div class="controls">
+           <form>
+             <h4>Age</h4>
+             <input type="text" id="age" value="28" />
+
+             <div class="gender">
+               <h4>Gender</h4>
+               <input
+                 type="radio"
+                 id="male"
+                 value="male"
+                 name="gender"
+                 checked
+               />
+               <label for="male">Male</label>
+               <input type="radio" id="female" value="female" name="gender" />
+               <label for="female">Female</label>
+             </div>
+
+             <h4>Height</h4>
+             <div class="height">
+               <input type="text" id="height" value="180" />
+               <div class="unit">cm</div>
+             </div>
+
+             <div class="Weight">
+               <h4>Weight</h4>
+               <input type="text" id="weight" value="65" />
+               <div class="unit1">Kg</div>
+             </div>
+           </form>
+         </div>
+
+         <div class="result">
+           <button class="calculate-btn">Calculate</button>
+           <div class="result-message"><span class="calorie">1,346</span> Calories / Day</div>
+
+           <div class="error-message">
+            <p>Please Enter All The Details correctly..</p>
+           </div>
+
+         </div>
+       </div>
+
+       <h3 class="note">NOTE !</h3> 
+
+       <div class="cacl-1">
+         <br>
+        <h5 class="call">Calorie surplus</h5>
+        <p> <span>For Muscle Gain:</span> <br>
+          <br>
+
+          A surplus of 250 to 500 calories per day is generally recommended. This allows for gradual muscle gain while minimizing fat gain. <br> <br></p>
+        <br><br>
+        <h5 class="call">Calorie defficiet</h5>
+        <p> <span>Moderate Deficit:</span> <br>
+          <br>
+
+          A deficit of 500 to 750 calories per day is commonly recommended for steady weight loss. This can lead to about 1 to 1.5 pounds of weight loss per week, which is considered safe and sustainable.</p>
+       </div>
+      </div>
+
+    </div>
+
+      <!-- BLOG DESIGN -->
+
+      <div class="about" id="about">
+        <div class="head">
+            <h2>OUR <span>BLOG'S</span></h2>
+        </div>
+        <div class="our-blog">
+            <div class="blog-card">
+                <img src="abs.webp" alt="">
+                <div class="blog-text">
+                    <h3>How to visible ABS faster ?</h3>
+                    <p>Some exercises that are known to challenge the body this way and target abdominal muscles directly, include:</p>
+                    <a href="https://www.usatoday.com/story/life/health-wellness/2024/01/23/how-to-get-abs/72186145007/">Read more</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="slim.webp" alt="">
+                <div class="blog-text">
+                    <h3>How to start redusing fat within a week ?</h3>
+                    <p>A fat belly is linked to various diseases as it is the most harmful fat in your body.</p>
+                    
+                    <a href="https://www.thejakartapost.com/life/2019/06/03/how-to-lose-belly-fat-in-seven-days.html">Read more</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="bulk.webp" alt="">
+                <div class="blog-text">
+                    <h3>How to start lean bulk ?</h3>
+                    <p>Most of us are familiar with bulking. Whether you’ve been cramming down meal after meal of chicken and rice, or drinking mass gainer shakes like they’re going out of fashion – everyone who heads to the gym has experimented with a bulk in order to pack on mass.</p>                    
+                    <a href="https://www.maxinutrition.com/blogs/sports/10-hacks-for-a-lean-bulk-transformation">Read more</a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- ABOUT US -->
+
+      <div class="contact" id="contact">
+        <div class="head">
+            <h2>ABOUT <span>US</span></h2>
+        </div>
+
+        <div class="about-page">
+            <div class="about-text">
+                <h2>Lets..</h2>
+                <h3>Unleash our potential.</h3>
+                <div class="description">
+                  <p>
+                    At <span id="logo-name">Bfitaesthetic</span>, we believe in empowering your fitness journey. <br> <br> Our website offers a comprehensive <span>Calorie Calculator</span> to help you track your intake and reach your goals. <br> <br> Explore our insightful <span>Blogs</span> packed with expert tips, nutrition advice, and workout strategies tailored for all fitness levels. <br>
+                    
+                    Join our customized <span>Programs</span> designed to fit your lifestyle, whether you’re aiming for weight loss, muscle gain, or overall wellness. <br> <br> With <span id="logo-name">Bfitaesthetic</span>, you have all the tools you need to succeed in one convenient place. <br> <br> Let’s achieve your fitness goals together! <br> <br>
+                    
+                    <span id="get">Get started today!</span></p>
+                </div>
+            </div>
+            <img src="img1.webp" alt="">
+        </div>
+
+
+      </div>
+
+      <!-- FOOTER DESIGN -->
+
+          <div class="footer">
+            <div class="copy">
+             <p>Copyright &copy; 2024 by @<span>Bfitaesthetic</span> | ALL Rights Reserved.</p>
+            </div>
+            <div class="follow">
+              <p>FOLLOW US ON</p>
+              <div class="social">
+                <a href=""><i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i>
+
+                </a>
+                <a href=""><i class="fa-brands fa-facebook"></i>
+
+                </a>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="bfit.js"></script>
+  </body>
+</html>
